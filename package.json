@@ -2,6 +2,7 @@
   "name": "e-com",
   "version": "1.0.0",
   "description": "e-commerce app built with MERN+ redux + tailwind CSS",
+  "proxy": "http:///",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -24,6 +25,6 @@
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",
-    "stripe": "^12.4.0"
+    "stripe": "^12.18.0"
   }
 }

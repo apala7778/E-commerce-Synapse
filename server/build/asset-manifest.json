@@ -1,15 +1,15 @@
-git remote add origin https://github.com/apala7778/E-commerce-Synapse.git{
+{
   "files": {
-    "main.css": "/static/css/main.5fc3e44d.css",
-    "main.js": "/static/js/main.6ba75cb7.js",
-    "static/js/787.c875205c.chunk.js": "/static/js/787.c875205c.chunk.js",
+    "main.css": "/static/css/main.f2d81d3d.css",
+    "main.js": "/static/js/main.8bc8a961.js",
+    "static/js/453.48d7f081.chunk.js": "/static/js/453.48d7f081.chunk.js",
     "index.html": "/index.html",
-    "main.5fc3e44d.css.map": "/static/css/main.5fc3e44d.css.map",
-    "main.6ba75cb7.js.map": "/static/js/main.6ba75cb7.js.map",
-    "787.c875205c.chunk.js.map": "/static/js/787.c875205c.chunk.js.map"
+    "main.f2d81d3d.css.map": "/static/css/main.f2d81d3d.css.map",
+    "main.8bc8a961.js.map": "/static/js/main.8bc8a961.js.map",
+    "453.48d7f081.chunk.js.map": "/static/js/453.48d7f081.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5fc3e44d.css",
-    "static/js/main.6ba75cb7.js"
+    "static/css/main.f2d81d3d.css",
+    "static/js/main.8bc8a961.js"
   ]
 }

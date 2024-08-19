@@ -83,6 +83,9 @@ server.use(
     saveUninitialized: false, // don't create session until something stored
   })
 );
+
+server.use(cors({ origin: 'http://localhost:3000' }));
+
 server.use(passport.authenticate('session'));
 server.use(
   cors({
@@ -178,7 +181,7 @@ passport.deserializeUser(function (user, cb) {
 // Payments
 
 // This is your test secret API key.
-const stripe = require('stripe')(process.env.STRIPE_SERVER_KEY);
+const stripe = require("stripe")(process.env.STRIPE_SERVER_KEY);
 
 server.post('/create-payment-intent', async (req, res) => {
   const { totalAmount, orderId } = req.body;
@@ -203,8 +206,10 @@ server.post('/create-payment-intent', async (req, res) => {
 main().catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect(process.env.MONGODB_URL);
-  console.log('database connected');
+  
+await mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+.then(() => console.log('MongoDB connected'))
+.catch(err => console.error('MongoDB connection error:', err));
 }
 
 server.listen(process.env.PORT, () => {
